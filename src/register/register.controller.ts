@@ -1,19 +1,13 @@
-import { Controller, Post, Body } from '@nestjs/common';
+import { Controller, Post, Body, Get } from '@nestjs/common';
+import { CreateRegisterDTO } from './dto/createRegister.dto';
 import { RegisterService } from './register.service';
 
-@Controller('register')
+@Controller()
 export class RegisterController {
   constructor(private readonly registerService: RegisterService) {}
 
-  @Post()
-  async createRegister(@Body() req) {
-    const { name, email, password, site, phone } = req;
-    return this.registerService.createRegister(
-      name,
-      email,
-      password,
-      site,
-      phone,
-    );
+  @Post('register')
+  async createRegister(@Body() req: CreateRegisterDTO): Promise<string> {
+    return this.registerService.createRegister(req);
   }
 }
