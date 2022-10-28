@@ -19,3 +19,13 @@
 * 7 - Você deve simular um cadastro e exibir a frase: Cliente "Nome" cadastrado com sucesso!
 * 8 - Um membro da equipe de enviar o projeto e mencionar o nome dos participantes.
 
+# Trabalho individual - 28/10
+
+* 1 - Utilize o projeto que acabaram de fazer.  Cada membro da equipe pode ter uma cópia do trabalho.
+
+* 2 - Crie os DTOs para validar corretamente os parâmetros de entrada. Exiba as mensagens adequadas, todos os campos menos phone são obrigatórios.
+
+* 3 - Você deve enviar o próprio trabalho. Subir em um repositório no Github e enviar no link abaixo.
+
+
+
